@@ -39,7 +39,7 @@
 			display: block;
 			width: 50px;
 			height: 50px;
-			//max-width:100%;		//	for-compatible // 如果设置会导致IE8下width为0，那么就需要外层标签强设width才能解决，因此注释掉
+			max-width: none;		//	如果不设置会导致IE8下width为0
 			//max-height:100%;		//	for-compatible
 			box-shadow: 0 1px 3px rgba(0,0,0,.22);
 			.rounded(@border-radius);
