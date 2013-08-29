@@ -50,7 +50,7 @@
 		width: 100%;
 		position: relative;
 		border: 1px solid @lighter;
-		background: #ffffff url(../images/bg_sprites.png) 0 -90px repeat-x;
+		background: #ffffff url("@{images-url}bg_sprites.png") 0 -90px repeat-x;
 		text-shadow: 0 1px 0 #fff;
 		box-shadow: inset 0 1px 1px #fff, 0 2px 6px rgba(0,0,0,0.4);
 		.ds-unread-list{
@@ -227,8 +227,7 @@
 		width: 13px;
 		height: 13px;
 		overflow: hidden;
-		background: @spritesheet 0 -163px no-repeat;
-		_background-image: url(../images/sprites.gif);	// ie6 hack
+		.spritesheet(0, -163px);
 		&:hover {
 			background-position: 0 -176px;
 		}
@@ -239,7 +238,7 @@
 		width: 64px;
 		height: 21px;
 		margin-right: 10px;
-		background: url(../images/logo.png) 0 0 no-repeat;
+		background: url("@{images-url}logo.png") 0 0 no-repeat;
 	}
 	
 	.ds-dialog-footer {
@@ -284,7 +283,7 @@
 				width: 14px;
 				height: 14px;
 				overflow: hidden;
-				background: transparent url(../images/delete.gif) no-repeat scroll 0 -14px;
+				background: transparent url("@{images-url}delete.gif") no-repeat scroll 0 -14px;
 			}
 			
 			&:hover{
@@ -303,10 +302,10 @@
 
 #ds-wrapper.ds-no-transition #ds-reset{
 	&.ds-dialog {
-		background-image: url(../images/black.png);
+		background-image: url("@{images-url}black.png");
 	}
 	button {
-		background: url(../images/bg_sprites.png) repeat-x !important;
+		background: url("@{images-url}bg_sprites.png") repeat-x !important;
 		&:hover {
 			background-position: 0 -30px !important;
 		}

@@ -42,3 +42,13 @@
 	clear: both; 
 	visibility: hidden;
 }
+
+.spritesheet(){
+	background: transparent url("@{images-url}sprites.png") no-repeat;
+	_background-image: url("@{images-url}sprites.gif");	// ie6 hack
+}
+
+.spritesheet(@x, @y){
+	background: transparent url("@{images-url}sprites.png") @x @y no-repeat;
+	_background-image: url("@{images-url}sprites.gif");	// ie6 hack
+}
