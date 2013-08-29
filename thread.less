@@ -67,7 +67,7 @@
 		.gradient2(#fcfcfc, #f9f9f9);
 		border: 1px #aaa solid;
 		box-shadow: 0 0 2px rgba(0,0,0,0.2);
-		text-shadow: 0 1px 0 #fff;
+		text-shadow: @text-shadow;
 		font-size:@font-size-small;
 		padding: 8px 14px;
 		ul{
@@ -94,7 +94,7 @@
 		border-bottom-color: #aaa;
 		box-shadow: inset 0 0 1px #fff;
 		margin-right:15px;
-		text-shadow: 0 1px 0 #fff;
+		text-shadow: @text-shadow;
 		.gradient(#e0e0e0, #ffffff);
 		.ds-icon-heart {
 			position: relative;
@@ -193,7 +193,7 @@
 					border-bottom: 1px solid #ddd;
 					display: block;
 					padding: 3px 10px;
-					text-shadow: 0 1px 0 #fff;
+					text-shadow: @text-shadow;
 					&:hover {
 						color: @gray;
 					}
@@ -440,7 +440,7 @@
 		height: 32px;	// box-sizing : border-box;
 		width: 100px;
 		text-align: center;
-		text-shadow: 0 1px 0 #fff;
+		text-shadow: @text-shadow;
 		color: @gray;
 		font-size: @font-size-large;
 		font-weight: bold;
@@ -533,7 +533,7 @@
 		margin:0 5px 0 0;
 		padding:0;		//	for compatible
 		a {
-			text-shadow: 0 1px 0 #fff;
+			text-shadow: @text-shadow;
 			padding: 3px 5px;
 			display: inline;
 			.rounded(@border-radius-large);
@@ -1063,7 +1063,7 @@
 	background-color:#FFF;
 	z-index: 9999;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
-	text-shadow: 0 1px 0 #fff;
+	text-shadow: @text-shadow;
 	.rounded(@border-radius);
 
 	a {
