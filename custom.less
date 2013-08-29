@@ -12,8 +12,14 @@
 #ds-thread #ds-reset .ds-comments, #ds-thread #ds-reset .ds-paginator {
 	border-bottom: 1px dotted #DDD;
 }
-
-#ds-thread #ds-reset button:hover, #ds-thread #ds-reset button:active {
+#ds-thread #ds-reset a.ds-unread-comments-count{
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+	text-shadow: none;
+	margin-left: 3px;
+}
+#ds-thread #ds-reset button:hover, #ds-thread #ds-reset button:active ,#ds-thread #ds-reset a.ds-unread-comments-count:hover,#ds-thread #ds-reset .ds-post-button:hover{
 	background: #40C8C9;
 	color: #FFF;
 	box-shadow: none;
@@ -52,7 +58,10 @@
 			margin: 18px 0 38px 0;
 		}
 		button:active {
-			background: #017CB9;
+			background: @highlight;
+		}
+		a.ds-unread-comments-count{
+			background: #00A3CF;
 		}
 		.ds-post-button {
 			margin:5px;
@@ -131,11 +140,6 @@
 }
 #ds-notify {
 	z-index: 10001;
-	#ds-reset {
-		ul.ds-notify-unread {
-			margin: 0;
-		}
-	}
 }
 .ds-user-name {
 	font: 14px Verdana,SimSun;
