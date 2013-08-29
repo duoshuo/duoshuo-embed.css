@@ -1,17 +1,22 @@
 /* Mixins */
 .rounded(@radius) {
+	/* commented by dark theme
 	-webkit-border-radius: @radius;
 	border-radius: @radius;
+	*/
 }
 
 .transition(@property, @duration: .15s, @easing: linear) {
+	/* commented by dark theme
 	transition: @property @duration @easing;
 	-webkit-transition: @property @duration @easing;
 	-moz-transition: @property @duration @easing;
 	//-o-transition: @property @duration @easing;
+	*/
 }
 
 .gradient(@begin, @end) {
+	/* commented by dark theme
 	background-color: @begin;
 	background-repeat: no-repeat;
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@end), color-stop(25%, @end), to(@begin));
@@ -20,9 +25,11 @@
 	background-image: -ms-linear-gradient(@end, @end 25%, @begin);
 	//background-image: -o-linear-gradient(@end, @end 25%, @begin);
 	background-image: linear-gradient(@end, @end 25%, @begin);
+	*/
 }
 
 .gradient2(@begin, @end) {
+	/* commented by dark theme
 	background-color: @begin;
 	background-repeat: repeat-x;
 	background-image: -khtml-gradient(linear, left top, left bottom, from(@begin), to(@end));
@@ -33,6 +40,7 @@
 	background: -ms-linear-gradient(top, @begin 0%,@end 100%);
 	background: linear-gradient(top, @begin 0%,@end 100%);
 	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{begin}',endColorstr='@{end}',GradientType=0)";
+	*/
 }
 
 .clearfix() {
