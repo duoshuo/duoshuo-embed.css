@@ -1,18 +1,23 @@
 /* Variables */
 @images-url: "http://static.duoshuo.com/images/";	// "../images/";
 
-@darkest: #222;
-@dark: #333;
-@medium: #555;
-@light: #777;
-@lighter: #999;
-@lightest: #CCC;
-@highlight: #dd3322; //#cc4d22;//#538dc2;
-@brand-primary:         #dd3322;
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 46.7%); // #777
+@gray-lighter:           lighten(#000, 60%);   // #999
+@gray-lightest:          lighten(#000, 80%);   // #CCC
 
-@text-color:			@dark;
-@link-color:            @light;
-@link-hover-color:      @dark; //darken(@link-color, 15%);
+@brand-primary:          #dd3322; //#cc4d22;//#538dc2;
+
+@highlight: 			@brand-primary;
+
+@text-color:			@gray-dark;
+@link-color:            @gray-light;
+@link-hover-color:      @gray-dark; //darken(@link-color, 15%);
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @font-size-base: 13px;
 @font-size-large: 14px;
@@ -21,8 +26,10 @@
 
 @dark-border: #BBB;
 @gray-background: #F8F8F8;
-@border-radius: 3px;
+@border-radius: 		3px;
+@border-radius-large:	5px;
 @border-shadow: 1px solid rgba(0, 0, 0, .13);
 @border-highlight: 1px solid rgba(255, 255, 255, 0.7);
+
 @avatar-size: 50px;
 @avatar-small-size: 30px;

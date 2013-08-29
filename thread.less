@@ -120,7 +120,7 @@
 	
 	/*	Hot Posts */
 	#ds-hot-posts{
-		border:1px solid @lightest;
+		border:1px solid @gray-lightest;
 		overflow:hidden;
 		margin: 8px 0;
 		padding:0;
@@ -130,7 +130,7 @@
 	.ds-header{
 		font-weight:bold;
 		font-size:@font-size-large;
-		color : @medium;
+		color : @gray;
 		line-height:30px;
 		padding : 0 12px;
 	}
@@ -151,7 +151,7 @@
 	
 	/*
 		a {
-			color: @lighter;
+			color: @gray-lighter;
 		}*/
 	}
 	.ds-visitor{
@@ -175,7 +175,7 @@
 		span {
 			display:block;
 			float:left;
-			color: @lighter;
+			color: @gray-lighter;
 		}
 		ul {
 			display: none;
@@ -195,14 +195,14 @@
 					padding: 3px 10px;
 					text-shadow: 0 1px 0 #fff;
 					&:hover {
-						color: @medium;
+						color: @gray;
 					}
 				}
 			}
 		}
 		&.ds-active {
 			span {
-				color: @medium;
+				color: @gray;
 			}
 			ul {
 				display: block;
@@ -267,7 +267,7 @@
 	    margin-right: 6px;
 	    padding: 1px 5px;
 		font-weight:bold;
-		.rounded(5px);
+		.rounded(@border-radius-large);
 		box-shadow: inset 0 1px 1px rgba(255,255,255,.4), 0 1px 1px rgba(0,0,0,.3);
 		text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 		&:hover {
@@ -316,7 +316,7 @@
 	.ds-textarea-wrapper {
 		position: relative;
 		//z-index: 1;
-		border: 1px solid @lightest;
+		border: 1px solid @gray-lightest;
 		border-bottom: none;
 		padding-right: 20px;
 		background: #ffffff url("@{images-url}bg_sprites.png") 0 -90px repeat-x;
@@ -329,10 +329,10 @@
 			height: 54px;
 			margin: 0;
 			resize: none;
-			color: @lighter;
+			color: @gray-lighter;
 			width: 100%;
 			&:focus {
-				color: @dark;
+				color: @gray-dark;
 			}
 		}
 		.ds-hidden-text{
@@ -346,7 +346,7 @@
 		}
 		textarea, .ds-hidden-text {
 			display: block;
-			font-family: Arial, Helvetica, sans-serif;
+			font-family: @font-family-sans-serif;
 			font-size: @font-size-base;
 			line-height: 20px;
 			border: none;
@@ -366,7 +366,7 @@
 		position: relative;
 		margin-right: 100px;
 		height: 30px;
-		border: 1px solid @lightest;
+		border: 1px solid @gray-lightest;
 		border-right: none;
 		border-bottom-color: #bbb;
 		border-bottom-left-radius: @border-radius;
@@ -416,16 +416,16 @@
 	
 	.ds-sync {
 		font-size:@font-size-small;
-		color: @lighter;
+		color: @gray-lighter;
 		line-height: 30px;
 		position: absolute;
 		right: 5px;
 		label {
-			color: @light;
+			color: @gray-light;
 			cursor: pointer;
 			.transition(color);
 			&:hover {
-				color: @medium;
+				color: @gray;
 			}
 		}
 		a.ds-service-icon, a.ds-service-icon-grey{
@@ -433,7 +433,7 @@
 		}
 	}
 	.ds-post-button {
-		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		font-family: @font-family-sans-serif;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -441,10 +441,10 @@
 		width: 100px;
 		text-align: center;
 		text-shadow: 0 1px 0 #fff;
-		color: @medium;
+		color: @gray;
 		font-size: @font-size-large;
 		font-weight: bold;
-		border: 1px solid @lightest;
+		border: 1px solid @gray-lightest;
 		border-bottom-color: @dark-border;
 		border-bottom-right-radius: @border-radius;
 		-webkit-border-bottom-right-radius: @border-radius;
@@ -453,7 +453,7 @@
 		box-shadow: inset 0 0 1px #fff;
 		&:hover {
 			background-position: 0 -15px;
-			color: @dark;
+			color: @gray-dark;
 		}
 		&:active {
 			-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -503,7 +503,7 @@
 		top: 8px;
 		
 		a{
-			color: @lighter;
+			color: @gray-lighter;
 			padding: 0 4px;	//	padding更大可以扩大可点击区域
 			margin: 0 2px;	//	仍然保留一点间隙，以免被误点
 			
@@ -536,7 +536,7 @@
 			text-shadow: 0 1px 0 #fff;
 			padding: 3px 5px;
 			display: inline;
-			.rounded(4px);
+			.rounded(@border-radius-large);
 			&.ds-current {
 				border: 1px solid #ccc;
 				background-color: rgba(0,0,0,.04);
@@ -574,7 +574,7 @@
 	
 	li.ds-post-placeholder{
 		text-align:center;
-		color:@lighter;
+		color:@gray-lighter;
 		padding:1em 0;
 	}
 	
@@ -621,13 +621,13 @@
 			margin: 8px 0;
 			border-radius: 4px;
 			border: 1px solid #DDD;
-			font-family: Courier, Courier New, monospace;
+			font-family: @font-family-monospace;
 			color: #666;
 		}
 		a {
 			color: @link-color;
 			&:hover {
-				color: @medium;
+				color: @gray;
 			}
 		}
 	}
@@ -646,7 +646,7 @@
 		//display: none;
 		position: absolute;
 		background-color: #fff;
-		.rounded(5px);
+		.rounded(@border-radius-large);
 		padding: 10px;
 		color: #333;
 		border: 1px solid #aaa;
@@ -728,7 +728,7 @@
 	.ds-comment-actions {
 		a {
 			font-size : @font-size-small;
-			color: @lighter;
+			color: @gray-lighter;
 			//vertical-align: top;
 			
 			.ds-icon{
@@ -739,7 +739,7 @@
 	}
 	
 	.ds-user-name {
-		color: @light;
+		color: @gray-light;
 		font-size: @font-size-base;
 		margin-right: 8px;
 	}
@@ -763,7 +763,7 @@
 	.ds-reply-active{
 		display: block;
 		.ds-post-reply {
-		 	color: @dark;
+		 	color: @gray-dark;
 			.ds-icon {
 				opacity: 1;
 			}
@@ -821,7 +821,7 @@
 		font-size: @font-size-small;
 		*font-size: 12px; 	// ie6/7会把所有中文修正成12px，因此会出现字体大小不一样的问题。
 		margin-right: 8px;
-		color: @lighter;
+		color: @gray-lighter;
 		_zoom:1;			//	ie6 hack 为了触发layout
 	}
 	
@@ -957,9 +957,9 @@
 		text-align: right;
 		padding: 10px 0;
 		a {
-			color: @lighter;
+			color: @gray-lighter;
 			&:hover {
-				color: @medium;
+				color: @gray;
 			}
 			text-decoration: none;	//	compatible
 		}
@@ -1004,7 +1004,7 @@
 			padding: 10px 10px;
 			textarea {
 				width: 95%;
-				color: @dark;
+				color: @gray-dark;
 				padding: 0;
 			}
 		}
@@ -1064,7 +1064,7 @@
 	z-index: 9999;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
 	text-shadow: 0 1px 0 #fff;
-	.rounded(3px);
+	.rounded(@border-radius);
 
 	a {
 		cursor:pointer;
@@ -1088,7 +1088,7 @@
 		border-bottom-left-radius: 3px;
 		li {
 			a {
-				color: @lighter;
+				color: @gray-lighter;
 				padding: 6px 10px;
 				display: block;
 				border-bottom: 1px solid #ccc;
