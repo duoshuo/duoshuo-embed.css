@@ -24,7 +24,7 @@
 	}
 
 	.ds-gradient-bg{
-		background: url(../images/bg_sprites.png) 0 -60px repeat-x;
+		background: url("@{images-url}bg_sprites.png") 0 -60px repeat-x;
 	}
 	
 	.ds-avatar {
@@ -63,8 +63,7 @@
 		vertical-align: middle;
 		display: inline-block;
 		overflow: hidden;
-		background: transparent @spritesheet no-repeat;
-		_background-image: url(../images/sprites.gif);	// ie6 hack
+		.spritesheet();
 	}
 	
 	a .ds-icon{
@@ -96,24 +95,24 @@
 		height: 16px !important;
 		line-height: 100px;
 		display: inline-block;
-		background: url(../images/service-icons-color.png) no-repeat;
-		_background-image: url(../images/service-icons-color.gif);
+		background: url("@{images-url}service-icons-color.png") no-repeat;
+		_background-image: url("@{images-url}service-icons-color.gif");
 		overflow: hidden;
 		//float: left;
 		//opacity: .8;
 	}
 	.ds-service-icon-grey{
 		//background-position-x: -16px;		// firefox doesn't support this property
-		background-image: url(../images/service-icons-grey.png);
-		_background-image: url(../images/service-icons-grey.gif);	// IE6 hack
+		background-image: url("@{images-url}service-icons-grey.png");
+		_background-image: url("@{images-url}service-icons-grey.gif");	// IE6 hack
 	}
 	.ds-service-link {
 		height: 16px !important;
 		line-height: 16px;
 		padding-left: 20px;
 		display: block;
-		background: url(../images/service-icons-color.png) no-repeat;
-		_background-image: url(../images/service-icons-color.gif);
+		background: url("@{images-url}service-icons-color.png") no-repeat;
+		_background-image: url("@{images-url}service-icons-color.gif");
 		overflow: hidden;
 	}
 	.ds-weibo {
@@ -174,7 +173,7 @@
 		cursor:pointer;
 		width: 32px !important;
 		height: 32px !important;
-		background: url(../images/icons_large.png) no-repeat !important;
+		background: url("@{images-url}icons_large.png") no-repeat !important;
 		overflow: hidden;
 		text-indent:-9999px;
 

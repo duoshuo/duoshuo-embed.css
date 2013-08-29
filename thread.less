@@ -323,7 +323,7 @@
 		border: 1px solid @lightest;
 		border-bottom: none;
 		padding-right: 20px;
-		background: #ffffff url(../images/bg_sprites.png) 0 -90px repeat-x;
+		background: #ffffff url("@{images-url}bg_sprites.png") 0 -90px repeat-x;
 		overflow: hidden;
 		textarea {
 			box-shadow: none;
@@ -387,8 +387,7 @@
 		height: 19px;
 		float:left;
 		margin-right:4px;
-		background: @spritesheet no-repeat;
-		_background-image: url(../images/sprites.gif);	//	ie6 hack
+		.spritesheet();
 		vertical-align: middle;
 		opacity: 0.6;
 		.transition(opacity);
@@ -976,13 +975,13 @@
 	
 	&.ds-no-transition { // ie 6/7/8/9 don't support transition
 		.ds-post-button, .ds-more a {
-			background: url(../images/bg_sprites.png) repeat-x !important;
+			background: url("@{images-url}bg_sprites.png") repeat-x !important;
 			&:hover {
 				background-position: 0 -30px !important;
 			}
 		}
 		.ds-like-thread-button {
-			background: url(../images/bg_sprites.png) repeat-x;
+			background: url("@{images-url}bg_sprites.png") repeat-x;
 		}
 	}
 	
