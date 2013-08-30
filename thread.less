@@ -65,7 +65,7 @@
 		position: absolute;
 		z-index: 9999;
 		.gradient2(#fcfcfc, #f9f9f9);
-		border: 1px #aaa solid;
+		border: @border-dark;
 		box-shadow: 0 0 2px rgba(0,0,0,0.2);
 		text-shadow: @text-shadow;
 		font-size:@font-size-small;
@@ -88,9 +88,9 @@
 	}
 	
 	a.ds-like-thread-button{
-		color: #555;
+		color: @gray;
 		padding: 4px 8px;
-		border: 1px solid #ccc;
+		border: @border-gray;
 		border-bottom-color: #aaa;
 		box-shadow: inset 0 0 1px #fff;
 		margin-right:15px;
@@ -102,7 +102,7 @@
 			opacity: 1;
 		}
 		span {
-			color: #555;
+			color: @gray;
 		}
 	}
 	
@@ -120,7 +120,7 @@
 	
 	/*	Hot Posts */
 	#ds-hot-posts{
-		border:1px solid @gray-lightest;
+		border:@border-gray;
 		overflow:hidden;
 		margin: 8px 0;
 		padding:0;
@@ -148,11 +148,6 @@
 		&:after {
 			.clearfix();
 		}
-	
-	/*
-		a {
-			color: @gray-lighter;
-		}*/
 	}
 	.ds-visitor{
 		float:right;
@@ -182,8 +177,8 @@
 			position: absolute;
 			top: 19px;
 			left: 0px;
-			border: 1px solid #bbb;
-			background-color: @gray-background;
+			border: @border-dark;
+			background: @gray-background;
 			box-shadow: inset 0 1px 1px #fff, 0 1px 1px rgba(0,0,0,.3);
 			border-radius: @border-radius;
 			text-align: center;
@@ -316,7 +311,7 @@
 	.ds-textarea-wrapper {
 		position: relative;
 		//z-index: 1;
-		border: 1px solid @gray-lightest;
+		border: @border-gray;
 		border-bottom: none;
 		padding-right: 20px;
 		background: #ffffff url("@{images-url}bg_sprites.png") 0 -90px repeat-x;
@@ -366,9 +361,9 @@
 		position: relative;
 		margin-right: 100px;
 		height: 30px;
-		border: 1px solid @gray-lightest;
+		border: @border-gray;
 		border-right: none;
-		border-bottom-color: #bbb;
+		border-bottom-color: @dark-border-color;
 		border-bottom-left-radius: @border-radius;
 		-webkit-border-bottom-left-radius: @border-radius;
 	}
@@ -444,8 +439,8 @@
 		color: @gray;
 		font-size: @font-size-large;
 		font-weight: bold;
-		border: 1px solid @gray-lightest;
-		border-bottom-color: @dark-border;
+		border: @border-gray;
+		border-bottom-color: @dark-border-color;
 		border-bottom-right-radius: @border-radius;
 		-webkit-border-bottom-right-radius: @border-radius;
 		.gradient(#e6e6e6, #fcfcfc);
@@ -503,7 +498,7 @@
 		top: 8px;
 		
 		a{
-			color: @gray-lighter;
+			color: @text-muted;
 			padding: 0 4px;	//	padding更大可以扩大可点击区域
 			margin: 0 2px;	//	仍然保留一点间隙，以免被误点
 			
@@ -538,7 +533,7 @@
 			display: inline;
 			.rounded(@border-radius-large);
 			&.ds-current {
-				border: 1px solid #ccc;
+				border: @border-gray;
 				background-color: rgba(0,0,0,.04);
 			}
 			&:hover {
@@ -574,7 +569,7 @@
 	
 	li.ds-post-placeholder{
 		text-align:center;
-		color:@gray-lighter;
+		color:@text-muted;
 		padding:1em 0;
 	}
 	
@@ -615,13 +610,13 @@
 		}
 		code {
 			display: block;
-			font-size: 12px;
+			font-size: @font-size-small;
+			font-family: @font-family-monospace;
 			padding: 8px 12px;
 			background-color: #F0F0F0;
 			margin: 8px 0;
 			border-radius: @border-radius;
 			border: 1px solid #DDD;
-			font-family: @font-family-monospace;
 			color: #666;
 		}
 		a {
@@ -649,7 +644,7 @@
 		.rounded(@border-radius-large);
 		padding: 10px;
 		color: #333;
-		border: 1px solid #aaa;
+		border: @border-dark;
 		box-shadow: 0 0 2px rgba(0,0,0,.2);
 		z-index: 9999;
 		font-size: @font-size-base;
@@ -728,7 +723,7 @@
 	.ds-comment-actions {
 		a {
 			font-size : @font-size-small;
-			color: @gray-lighter;
+			color: @text-muted;
 			//vertical-align: top;
 			
 			.ds-icon{
@@ -821,7 +816,7 @@
 		font-size: @font-size-small;
 		*font-size: 12px; 	// ie6/7会把所有中文修正成12px，因此会出现字体大小不一样的问题。
 		margin-right: 8px;
-		color: @gray-lighter;
+		color: @text-muted;
 		_zoom:1;			//	ie6 hack 为了触发layout
 	}
 	
@@ -905,7 +900,7 @@
 			.gradient(#e6e6e6, #ffffff);
 			.rounded(@border-radius);
 			.transition(all);
-			border: 1px solid #aaa;
+			border: @border-dark;
 			display: inline-block;
 			font-size: 15px;
 			padding: 8px 40px 7px;
@@ -946,7 +941,7 @@
 			}
 			&.ds-current {
 				color: @highlight;
-				border: 1px solid #CCC;
+				border: @border-gray;
 				//font-size: 14px;
 			}
 		}
@@ -957,7 +952,7 @@
 		text-align: right;
 		padding: 10px 0;
 		a {
-			color: @gray-lighter;
+			color: @text-muted;
 			&:hover {
 				color: @gray;
 			}
@@ -992,7 +987,7 @@
 			border-top: none;
 		}
 		.ds-tab a.ds-current {	// no alpha
-			background-color: @gray-background;
+			background: @gray-background;
 		}
 	}
 	
@@ -1057,7 +1052,7 @@
 }
 
 #ds-smilies-tooltip {
-	border:1px #aaa solid;
+	border:@border-dark;
 	position:absolute;
 	width:400px;
 	background-color:#FFF;
@@ -1082,8 +1077,8 @@
 		left: 0;
 		height:159px;
 		overflow-y:auto;
-		background-color: @gray-background;
-		border-right: 1px solid #ccc;
+		background: @gray-background;
+		border-right: @border-gray;
 		border-top-left-radius: @border-radius;
 		border-bottom-left-radius: @border-radius;
 		li {
@@ -1091,7 +1086,7 @@
 				color: @gray-lighter;
 				padding: 6px 10px;
 				display: block;
-				border-bottom: 1px solid #ccc;
+				border-bottom: @border-gray;
 				.gradient2(#ffffff, #e9e9e9);
 				font-size: @font-size-small;
 				line-height: 1.3em;
