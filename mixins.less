@@ -1,4 +1,9 @@
 /* Mixins */
+.box-sizing(@sizing){
+	-webkit-box-sizing:	@sizing;
+	-moz-box-sizing: @sizing;
+	box-sizing: @sizing;
+}	
 .rounded(@radius) {
 	/* commented by dark theme
 	-webkit-border-radius: @radius;
