@@ -4,15 +4,50 @@ embed.css
 多说评论框CSS样式源代码
 
 ## 安装方法
-    sudo npm install -g less
-    lessc -x embed.less
+安装less
 
-## 主题设计步骤
+    sudo npm install -g less
+
+
+编译embed.css
+
+    lessc -x embed.less > embed.css
+
+
+在你的网页中的duoshuoQuery部分:
+
+    var duoshuoQuery = {short_name : 'XXXX'};
+
+
+增加 theme : 'none'
+
+    var duoshuoQuery = {short_name : 'XXXX', theme : 'none'};
+
+
+这样，多说就不会加载自己的样式。
+
+你自己来加载由你自己编译的embed.css，在head中加入
+
+    <link rel="stylesheet" type="text/css" href="{路径}embed.css" />
+
+
+## 开发建议
+建议通过修改variables.less来自定义配色
+
+建议将对特定样式的修改都写在custom.less中
+
+由于官方的代码经常更新，建议经常merge 官方代码。
+
+    git fetch origin
+    git merge origin master 
+
+
+## 主题发布方法
 1. 在github上fork这个duoshuo-embed.css项目
 2. git clone 到本地
 3. 以你主题的名字，创建一个branch(分支)，并切换到这个分支上
 4. 开发代码(小幅修改建议写在custom.less中)
-5. git push，并发起pull request，要求多说团队merge
+5. git push，在[多说开发者中心](http://dev.duoshuo.com/)发帖，或者发信给多说团队
 
 ## 样式参考
 1. [多说开发者中心的CSS开发指南](http://dev.duoshuo.com/docs/4ff1cfd0397309552c000017)
