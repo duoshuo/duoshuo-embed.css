@@ -5,26 +5,32 @@ embed.css
 
 ## 安装方法
 1. 安装less
+
     sudo npm install -g less
 
 2. 编译embed.css
+
     lessc -x embed.less > embed.css
 
 3. 在你的网页中，duoshuoQuery部分:
+
     var duoshuoQuery = {short_name : 'XXXX'};
 
 增加 theme : 'none'
+
     var duoshuoQuery = {short_name : 'XXXX', theme : 'none'};
 
 这样，多说就不会加载自己的样式。
 
 4. 你自己来加载由你自己编译的embed.css，在head中加入
+
     <link rel="stylesheet" type="text/css" href="{路径}embed.css" />
 
 ## 开发建议
 1. 建议通过修改variables.less来自定义配色
 2. 建议将对特定样式的修改都写在custom.less中
 3. 由于官方的代码经常更新，建议经常merge 官方代码。
+
     git fetch origin
     git merge origin master 
 
