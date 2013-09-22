@@ -24,7 +24,17 @@ embed.css
     var duoshuoQuery = {short_name : 'XXXX', theme : 'none'};
 
 
-这样，多说就不会加载自己的样式。
+这样，多说就不会加载自己的样式。  
+
+WordPress插件中,请找到WordPress.php,搜索duoshuoQuery(注意一共要调整两处):
+
+    var duoshuoQuery = <?php echo json_encode($this->buildQuery());?>;
+    
+在此行后加上:
+
+    duoshuoQuery.theme = 'none';
+
+
 
 你自己来加载由你自己编译的embed.css，在head中加入
 
