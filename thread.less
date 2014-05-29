@@ -144,7 +144,7 @@
 		padding: 8px 0;
 		width: 100%;
 		clear: both;
-	
+		background:#f6f6f6;
 		&:after {
 			.clearfix();
 		}
@@ -166,6 +166,7 @@
 		text-align: right;
 		line-height: 18px;
 		padding-bottom: 3px;
+		margin-right:15px;
 		width: 75px;
 		span {
 			display:block;
@@ -218,7 +219,8 @@
 	.ds-login-buttons {
 		width: 100%;
 		position: relative;
-		padding: 10px 0 6px;
+		padding-top: 10px;
+		background:#f6f6f6;
 		//border-top: @border-shadow;
 		p {
 			float: left;
@@ -266,7 +268,7 @@
 		box-shadow: inset 0 1px 1px rgba(255,255,255,.4), 0 1px 1px rgba(0,0,0,.3);
 		text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 		&:hover {
-			background: #f00;
+			//background: #f00;
 		}
 	}
 	
@@ -277,18 +279,18 @@
 		font-size: @font-size-small;
 		position: relative;
 		z-index: 3;
-		margin: 8px 0;
-		padding: 0 0 0 60px;
+		//margin: 8px 0;
+		padding: 20px 20px 20px 80px;
 		position:relative;
 		_zoom:1;		// fix ie6 position padding bug
+		background:#f6f6f6;
 		&:after {
 			.clearfix();
 		}
 		
 		.ds-avatar {
 			position : absolute;
-			top: 0;
-			left: 0;
+			left: 20px;
 			img {
 				width: @avatar-size;
 				height: @avatar-size;
@@ -301,6 +303,9 @@
 	.ds-inline-replybox{	//	这种情况下，插入的位置一般已经留了padding，再额外增加下方的margin就没必要了
 		margin: 8px 0 2px 0;
 		padding-left:38px;
+		.ds-avatar{
+			left:5px;
+		}
 		.ds-avatar img{
 			width: @avatar-small-size;
 			height: @avatar-small-size;
@@ -312,7 +317,7 @@
 		position: relative;
 		//z-index: 1;
 		border: @border-gray;
-		border-bottom: none;
+		//border-bottom: none;
 		padding-right: 20px;
 		background: #ffffff url("@{images-url}bg_sprites.png") 0 -90px repeat-x;
 		overflow: hidden;
@@ -345,6 +350,7 @@
 			font-size: @font-size-base;
 			line-height: 20px;
 			border: none;
+			background:#fff;
 		}
 	}
 	.ds-post-toolbar {
@@ -361,9 +367,9 @@
 		position: relative;
 		margin-right: 100px;
 		height: 30px;
-		border: @border-gray;
+		//border: @border-gray;
 		border-right: none;
-		border-bottom-color: @dark-border-color;
+		//border-bottom-color: @dark-border-color;
 		border-bottom-left-radius: @border-radius;
 		-webkit-border-bottom-left-radius: @border-radius;
 	}
@@ -415,6 +421,7 @@
 		line-height: 30px;
 		position: absolute;
 		right: 5px;
+		display:none;
 		label {
 			color: @gray-light;
 			cursor: pointer;
@@ -435,20 +442,23 @@
 		height: 32px;	// box-sizing : border-box;
 		width: 100px;
 		text-align: center;
-		text-shadow: @text-shadow;
-		color: @gray;
+		//text-shadow: @text-shadow;
+		color:#fff;
+		margin-top:10px;
 		font-size: @font-size-large;
 		font-weight: bold;
-		border: @border-gray;
+		//border: @border-gray;
 		border-bottom-color: @dark-border-color;
-		border-bottom-right-radius: @border-radius;
-		-webkit-border-bottom-right-radius: @border-radius;
+		//border-bottom-right-radius: @border-radius;
+		//-webkit-border-bottom-right-radius: @border-radius;
 		.gradient(#e6e6e6, #fcfcfc);
 		.transition(all);
-		box-shadow: inset 0 0 1px #fff;
+		//box-shadow: inset 0 0 1px #fff;
+		border:none;
+		background:#6bc30d;
 		&:hover {
 			background-position: 0 -15px;
-			color: @gray-dark;
+			//color: @gray-dark;
 		}
 		&:active {
 			-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -480,6 +490,7 @@
 	/* Comments Info */
 	
 	.ds-comments-info {
+		display:none;
 		width: 100%;
 		//z-index: 2;
 		font-size: @font-size-base;
@@ -561,7 +572,7 @@
 		overflow:hidden;	// clearfix
 		clear: both;
 		//position: relative; post-self本身的relative的，所以就不需要它是relative了
-		border-top: @border-shadow;
+		border-bottom: @border-shadow;
 		margin:0;		//	for-compatible
 		padding:0;		//	for-compatible
 		list-style:none;//	for-compatible
@@ -580,16 +591,16 @@
 		&:after {
 			.clearfix();
 		}
-		&:hover {
-			.ds-post-delete, .ds-post-report {
-				display: inline-block;
-			}
-		}
+		//&:hover {
+			//.ds-post-delete, .ds-post-report {
+			//	display: inline-block;
+			//}
+		//}
 	}
 	
 	&.ds-touch .ds-post-self{
 		.ds-post-delete, .ds-post-report {
-			display: inline-block;
+			//display: inline-block;
 		}
 	}
 
@@ -739,11 +750,12 @@
 		margin-right: 8px;
 	}
 	
-	.ds-post-likes {
+	.ds-post-likes{
+		float:right;
 	}
 	
 	.ds-post-liked .ds-icon-like {
-		background-position: 0 -130px;
+		//background-position: 0 -130px;
 	}
 
 	.ds-post-liked{
@@ -752,7 +764,8 @@
 		}
 	}
 	
-	.ds-post-reply {
+	.ds-post-reply{
+		float:right;
 	}
 	
 	.ds-reply-active{
@@ -785,32 +798,43 @@
 	.ds-icon-like {
 		width: 14px;
 		height: 13px;
-		background-position: 0 -117px;
+		background: url("@{images-url}like.png") no-repeat 2px -7px;
+		opacity: 1;
+		
 	}
-	
-	.ds-icon-share {
-		width: 18px;
-		height: 13px;
-		background-position: 0 -234px;
+	.ds-icon-like:hover{
+		background-position:-15px -7px;
 	}
+	.ds-post-repost{
+		display:none;
+	}
+//	.ds-icon-share {
+//		width: 18px;
+//		height: 13px;
+//		background-position: 0 -234px;
+//	}
 	
 	.ds-icon-reply {
 		width: 18px;
 		height: 13px;
-		background-position: 0 -105px;
+		background: url("@{images-url}edit.png") no-repeat 3px -7px;
+		opacity: 1;
+	}
+	.ds-icon-reply:hover{
+		background-position:-15px -7px;
 	}
 	
-	.ds-icon-delete {
-		width: 13px;
-		height: 13px;
-		background-position: 0 -176px;
-	}
+//	.ds-icon-delete {
+//		width: 13px;
+//		height: 13px;
+//		background-position: 0 -176px;
+//	}
 	
-	.ds-icon-report {
-		width: 12px;
-		height: 12px;
-		background-position: 0 -189px;
-	}
+//	.ds-icon-report {
+//		width: 12px;
+//		height: 12px;
+//		background-position: 0 -189px;
+//	}
 	
 	.ds-time {
 		font-size: @font-size-small;
