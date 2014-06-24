@@ -963,12 +963,21 @@
 	/* IE fix */
 	
 	&.ds-no-transition { // ie 6/7/8/9 don't support transition
-		.ds-post-button, .ds-more a {
+		
+		.ds-more a {
 			background: url("@{images-url}bg_sprites.png") repeat-x !important;
 			&:hover {
 				background-position: 0 -30px !important;
 			}
 		}
+		
+		.ds-post-button {
+			background-color: #00a3cf !important;
+			&:hover {
+				background-color: #40c8c9 !important;
+			}
+		}
+		
 		.ds-like-thread-button {
 			background: url("@{images-url}bg_sprites.png") repeat-x;
 		}
