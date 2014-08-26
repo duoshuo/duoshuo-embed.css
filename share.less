@@ -1,0 +1,167 @@
+.ds-share {
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        .clearfix();
+        & li {
+            float: left;
+            margin: 2px;
+        }
+    }
+
+    & .ds-share-side-left,
+      .ds-share-side-right {
+        position: fixed;
+        top: 50%;
+        z-index: 1000;
+    }
+
+    & .ds-share-side-inner {
+        width: 160px;
+        height: 170px;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        position: relative;
+        top: -110px;
+        background-color: #fff;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        & ul {
+            margin-top: 4px;
+            & li {
+                margin: 8px 10px;
+            }
+        }
+    }
+
+    & .ds-share-side-toggle {
+        width: 38px;
+        height: 170px;
+        background: #ff6633;
+        color: #fff;
+        position: absolute;
+        top: -1px;
+        text-align: center;
+        font-weight: bolder;
+        border-top: 1px solid #f63;
+        border-bottom: 1px solid #f63;
+        cursor: pointer;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    & .ds-share-side-left {
+        left: 0;
+        & .ds-share-side-inner {
+            left: -100%;;
+            transition: left 0.8s;
+        }
+        & .ds-share-side-toggle {
+            right: -38px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        }
+        & .slide-to-right {
+           left: 0;
+        }
+    }
+
+    & .ds-share-side-right {
+        right: 0;
+        & .ds-share-side-inner {
+            right: -100%;
+            transition: right 0.8s;
+        }
+        & .ds-share-side-toggle {
+            left: -38px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.25);
+        }
+        & .slide-to-left {
+            right: 0;
+        }
+
+    }
+
+}
+
+    .ds-icons-16 {
+        & .ds-weibo,
+          .ds-sohu,
+          .ds-renren,
+          .ds-netease,
+          .ds-qqt,
+          .ds-kaixin,
+          .ds-douban,
+          .ds-msn,
+          .ds-qzone,
+          .ds-duoshuo,
+          .ds-360,
+          .ds-alipay,
+          .ds-qq,
+          .ds-baidu,
+          .ds-taobao,
+          .ds-google {
+            height: 16px !important;
+            line-height: 16px;
+            padding-left: 20px;
+            text-decoration: none;
+            color: #999;
+            font-size: 14px;
+            display: block;
+            background: url("@{images-url}service-icons-color.png") no-repeat;
+            _background-image: url("@{images-url}service-icons-color.gif");
+            overflow: hidden;
+        }
+        & .ds-weibo {
+            background-position: 0 0;
+        }
+        & .ds-sohu {
+            background-position: 0 -16px;
+        }
+        & .ds-renren {
+            background-position: 0 -32px;
+        }
+        & .ds-netease {
+            background-position: 0 -48px;
+        }
+        & .ds-qqt {
+            background-position: 0 -64px;
+        }
+        & .ds-kaixin {
+            background-position: 0 -80px;
+        }
+        & .ds-douban {
+            background-position: 0 -96px;
+        }
+        & .ds-msn {
+            background-position: 0 -112px;
+        }
+        & .ds-qzone {
+            background-position: 0 -128px;
+        }
+        & .ds-duoshuo {
+            background-position: 0 -144px;
+        }
+        
+        & .ds-360 {
+            background-position: 0 -160px;
+        }
+        & .ds-alipay {
+            background-position: 0 -176px;
+        }
+        
+        & .ds-qq {
+            background-position: 0 -192px;
+        }
+        & .ds-baidu {
+            background-position: 0 -208px;
+        }
+        & .ds-taobao {
+            background-position: 0 -224px;
+        }
+        & .ds-google {
+            background-position: 0 -240px;
+        }
+    }
