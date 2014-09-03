@@ -17,17 +17,17 @@
         position: fixed;
         top: 50%;
         z-index: 1000;
-        transition: transform 0.6s;
+        .transition(transform, 0.4s);
     }
 
     .ds-share-aside-left {
         left: 0;
-        transform: translate(-100%, -50%);
+        .translate(-100%, -50%);
     }
 
     .ds-share-aside-right {
         right: 0;
-        transform: translate(100%, -50%);
+        .translate(100%, -50%);
     }
     
     .ds-share-aside-inner {
@@ -79,11 +79,11 @@
     }
 
     .slide-to-left {
-        transform: translate(0, -50%);
+        .translate(0, -50%);
     }
     
     .slide-to-right {
-        transform: translate(0, -50%);
+        .translate(0, -50%);
     }
 
     .ds-icons-16 {

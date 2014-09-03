@@ -15,7 +15,12 @@
 	-moz-transition: @property @duration @easing;
 	//-o-transition: @property @duration @easing;
 }
-
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9 only
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
 .gradient(@begin, @end) {
 	background-color: @begin;
 	background-repeat: no-repeat;
