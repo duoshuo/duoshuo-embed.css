@@ -46,14 +46,11 @@
 }
 
 .clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+    content: ".";  
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
 }
 
 .spritesheet(){
