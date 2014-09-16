@@ -1,5 +1,4 @@
 ## embed.css
----
 
 embed.css 项目是多说评论框 CSS 样式源代码
 
@@ -30,7 +29,7 @@ $ npm run dev
 var duoshuoQuery = {short_name : 'XXXX'};
 ```
 
-2. 增加 theme : 'none'
+2.增加 theme : 'none'
 
 ```js
 var duoshuoQuery = {short_name : 'XXXX', theme : 'none'};
@@ -54,7 +53,7 @@ var duoshuoQuery = <?php echo json_encode($this->buildQuery());?>;
 duoshuoQuery.theme = 'none';
 ```
 
-3. 加载自定义的 embed.css，需要在 `<head></head>` 中加入
+3.加载自定义的 embed.css，需要在 `<head></head>` 中加入
 
 ```html
 <link rel="stylesheet" type="text/css" href="{路径}embed.css" />
