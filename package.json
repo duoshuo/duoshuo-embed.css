@@ -1,0 +1,17 @@
+{
+  "name": "duoshuo-embed.css",
+  "main": "dist/embed.min.css",
+  "private" : true,
+  "scripts": {
+    "serve": "serve --no-less .",
+    "build-less": "node_modules/.bin/cleancss less/embed.less -o dist/embed.min.css --s0 --debug",
+    "watch": "rewatch less/*.less -c 'npm run build-less'",
+    "dev": "npm run serve & npm run watch",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "~1.4.0",
+    "rewatch": "~0.2.2",    
+    "clean-css": "^2.2.13"
+  }
+}
