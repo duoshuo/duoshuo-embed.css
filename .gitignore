@@ -43,3 +43,4 @@ validation-staus.json
 .idea
 node_modules
 gulpfile.js
+example/config.js

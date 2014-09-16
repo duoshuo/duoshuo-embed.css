@@ -6,14 +6,24 @@
   <link rel="stylesheet" href="../dist/embed.min.css">
   <!-- duoshuo embed js -->
   <script src="http://static.duoshuo.com/embed.js"></script>
+  <style>
+    *,body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .demo-wrapper {
+      margin: 50px;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
-  <div class="ds-thread"></div>
+  <div class="demo-wrapper">
+    <div class="ds-thread"></div>
+  </div>
+  <script src="config.js"></script>
   <script>
-    var duoshuoQuery = {
-      short_name : 'XXXX', 
-      theme : 'none'
-    };
+    duoshuoQuery.theme = 'none';
   </script>
 </body>
 </html>

@@ -4,14 +4,14 @@
   "private" : true,
   "scripts": {
     "serve": "serve --no-less .",
-    "build-less": "node_modules/.bin/cleancss less/embed.less -o dist/embed.min.css --s0 --debug",
+    "build-less": "node_modules/.bin/lessc -x less/embed.less dist/embed.min.css",
     "watch": "rewatch less/*.less -c 'npm run build-less'",
-    "dev": "npm run serve & npm run watch",
+    "dev": "npm run watch & npm run serve",
     "start": "npm run dev"
   },
   "devDependencies": {
     "serve": "~1.4.0",
     "rewatch": "~0.2.2",    
-    "clean-css": "^2.2.13"
+    "less": "~1.7.3"
   }
 }
