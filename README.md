@@ -1,6 +1,6 @@
-## embed.css
+## duoshuo-embed.css
 
-embed.css 项目是多说评论框 CSS 样式源代码
+duoshuo-embed.css 项目是多说评论框 CSS 样式源代码
 
 ### 开发环境指南
 
@@ -17,7 +17,7 @@ $ npm install
 $ npm run dev
 ```
 
-此工具会监听 `less` 目录下文件变动，并编译最新的 `dist/*.css` 文件。
+此工具会监听 `less` 目录下文件变动，并编译最新的 `dist/*.css` 文件。并在 `http://localhost:3000` 打开一个本地调试服务。
 
 ### 安装与使用自定义样式方法
 
