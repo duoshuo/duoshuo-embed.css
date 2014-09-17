@@ -1,14 +1,14 @@
-## embed.css
+## duoshuo-embed.css
 
 多说评论框 CSS 样式源代码，采用 LESS 编写。
 
 现在开始，为多说评论框开发新主题：
 
-* [环境配置指南](./wiki/环境配置指南)
-* [调试指南](./wiki/调试指南)
-* [编码习惯指南](./wiki/编码习惯指南)
-* [样式自定义指南](./wiki/样式自定义指南)
-* [发布成为官方主题](./wiki/发布成为官方主题)
+* [环境配置指南](https://github.com/duoshuo/duoshuo-embed.css/wiki/环境配置指南)
+* [调试指南](https://github.com/duoshuo/duoshuo-embed.css/wiki/调试指南)
+* [编码习惯指南](https://github.com/duoshuo/duoshuo-embed.css/wiki/编码习惯指南)
+* [样式自定义指南](https://github.com/duoshuo/duoshuo-embed.css/wiki/样式自定义指南)
+* [发布成为官方主题](https://github.com/duoshuo/duoshuo-embed.css/wiki/发布成为官方主题)
 
 ### 样式参考
 
