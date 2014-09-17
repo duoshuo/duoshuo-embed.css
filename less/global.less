@@ -5,17 +5,10 @@
 **/
 
 #ds-ssr {
-  display:none !important;
+  display: none !important;
 }
 
 #ds-reset {
-  * {
-    .box-sizing(content-box);
-  }
-  input[type=button], input[type=submit], input[type=reset], button {
-    .box-sizing(border-box);
-  }
-
   // 我们不修改用户的默认字体，保持和网页原有字体一致。font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: @font-size-base;
@@ -24,6 +17,14 @@
   line-height: 1;
   text-align: left;
   
+  * {
+    .box-sizing(content-box);
+  }
+
+  input[type=button], input[type=submit], input[type=reset], button {
+    .box-sizing(border-box);
+  }
+
   div, 
   ul, 
   ol, 
