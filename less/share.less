@@ -44,21 +44,11 @@
         .translate(-100%, -50%);
     }
     
-    &.ds-share-aside-left-fix {
-        left: -229px;
-        transform: none;
-    }
-    
     &.ds-share-aside-right {
         right: 0;
         .translate(100%, -50%);
     }
     
-    &.ds-share-aside-right-fix {
-        right: -229px;
-        transform: none;
-    }
-
     .ds-share-aside-toggle {
         width: 28px;
         padding: 23px 2px;
@@ -435,4 +425,21 @@
         z-index: 1000;
     }
 
+}
+
+#ds-share {
+    &.ds-no-transition {
+        #ds-reset {
+            
+            &.ds-share-aside-left {
+                left: -229px;
+                transform: none;
+            }
+
+            &.ds-share-aside-right {
+                right: -229px;
+                transform: none;
+            }
+        }
+    }
 }
