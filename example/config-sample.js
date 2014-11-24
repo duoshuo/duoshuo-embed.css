@@ -1,4 +1,4 @@
 var duoshuoQuery = {
-  short_name: 'airpub',
+  short_name: 'YOUR_DUOSHUO_SHORTNAME',
   theme: 'none'
 };
