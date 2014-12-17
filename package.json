@@ -8,7 +8,6 @@
     "watch": "rewatch less/*.less -c 'npm run build-less'",
     "dev-watch": "rewatch less/*.less -c 'npm run dev-build-less'",
     "build-less": "node_modules/.bin/lessc -x less/embed.less dist/embed.min.css",
-    "dev-build-less": "node_modules/.bin/lessc -x less/embed.less ../duoshuo-embed/dist/embed.min.css",
     "dev": "npm run watch & npm run serve",
     "start": "npm run dev"
   },
