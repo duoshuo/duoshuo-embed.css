@@ -1,24 +1,19 @@
-/**
-*
-* Mixins
-*
-**/
-
-.box-sizing(@sizing) {
+/* Mixins */
+.box-sizing(@sizing){
   -webkit-box-sizing: @sizing;
-     -moz-box-sizing: @sizing;
-          box-sizing: @sizing;
-}
-
+  -moz-box-sizing: @sizing;
+  box-sizing: @sizing;
+} 
 .rounded(@radius) {
   -webkit-border-radius: @radius;
-          border-radius: @radius;
+  border-radius: @radius;
 }
 
 .transition(@property, @duration: .15s, @easing: linear) {
+  transition: @property @duration @easing;
   -webkit-transition: @property @duration @easing;
-     -moz-transition: @property @duration @easing;
-          transition: @property @duration @easing;
+  -moz-transition: @property @duration @easing;
+  //-o-transition: @property @duration @easing;
 }
 
 .translate(@x; @y) {
@@ -35,6 +30,7 @@
   background-image: -webkit-linear-gradient(@end, @end 25%, @begin);
   background-image: -moz-linear-gradient(top, @end, @end 25%, @begin);
   background-image: -ms-linear-gradient(@end, @end 25%, @begin);
+  //background-image: -o-linear-gradient(@end, @end 25%, @begin);
   background-image: linear-gradient(@end, @end 25%, @begin);
 }
 
@@ -45,6 +41,7 @@
   background: -moz-linear-gradient(top, @begin 0%, @end 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@begin), color-stop(100%,@end));
   background: -webkit-linear-gradient(top, @begin 0%,@end 100%);
+  //background: -o-linear-gradient(top, @begin 0%,@end 100%);
   background: -ms-linear-gradient(top, @begin 0%,@end 100%);
   background: linear-gradient(top, @begin 0%,@end 100%);
   filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{begin}',endColorstr='@{end}',GradientType=0)";
@@ -58,12 +55,12 @@
   visibility: hidden;
 }
 
-.spritesheet() {
+.spritesheet(){
   background: transparent url("@{images-url}sprites.png") no-repeat;
   _background-image: url("@{images-url}sprites.gif"); // ie6 hack
 }
 
-.spritesheet(@x, @y) {
+.spritesheet(@x, @y){
   background: transparent url("@{images-url}sprites.png") @x @y no-repeat;
   _background-image: url("@{images-url}sprites.gif"); // ie6 hack
 }

@@ -1,8 +1,6 @@
 ## embed.justflat.css
 
-多说评论框 justflat 主题
-
-![screenshot](./screenshot.png)
+多说评论框 Justflat 主题，贡献者 @foru17
 
 ### 为多说评论框开发新主题：
 
