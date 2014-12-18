@@ -1,0 +1,38 @@
+*,body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 30px;
+  margin-top: 40px;
+  background-color: #444;
+}
+.wrapper {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  width: 65%;
+  float: left;
+}
+.right {
+  width: 30%;
+  float: right;
+}
+.sidebar-title {
+  font-size: 14px;
+  color: #999;
+  font-weight: normal;
+}
+.content-title {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+a {
+  color: #999;
+  text-decoration: none;
+}

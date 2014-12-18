@@ -42,3 +42,4 @@ validation-staus.json
 .CVS
 .idea
 node_modules
+example/config.*
