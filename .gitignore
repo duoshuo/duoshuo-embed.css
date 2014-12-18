@@ -42,3 +42,5 @@ validation-staus.json
 .CVS
 .idea
 node_modules
+
+exmaple/config.*
