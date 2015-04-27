@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "serve --no-less .",
     "watch": "rewatch less/*.less -c 'npm run build-less'",
-    "build-less": "node_modules/.bin/lessc -x less/embed.less dist/embed.min.css",
+    "build-less": "node_modules/.bin/lessc -x less/embed.less dist/embed.default.css",
     "dev": "npm run watch & npm run serve",
     "start": "npm run dev"
   },
