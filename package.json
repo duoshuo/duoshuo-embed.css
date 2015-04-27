@@ -1,7 +1,7 @@
 {
   "name": "duoshuo-theme-dark",
   "main": "dist/embed.dark.css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private" : true,
   "scripts": {
     "serve": "serve --no-less .",
